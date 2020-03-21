@@ -14,7 +14,7 @@
                 <a href="#home">Singolo</a>
             </div>
             <ul class="menu__list">
-                <li><a href="#home">Home</a></li>
+                <li><a class="active" href="#home">Home</a></li>
                 <li><a href="#services">Services</a></li>
                 <li><a href="#portfolio">Portfolio</a></li>
                 <li><a href="#about">About</a></li>
@@ -34,8 +34,14 @@
                         <img src="assets/img/iPhone2.png" alt="Horizontal iPhone">
                     </div>
                 </div>
-                <div class="btn-prev"></div>
-                <div class="btn-next"></div>
+                <div class="slide">
+                    <div>
+                        <img src="assets/img/iPhone1.png" alt="Vertical iPhone">
+                    </div>
+
+                </div>
+                <div class="btn-prev" onclick="plusSlides(-1)"></div>
+                <div class="btn-next" onclick="plusSlides(1)"></div>
             </div>
         </div>
     </main>
@@ -112,12 +118,12 @@
                 Duis mollis, est non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit.
             </p>
             <div class="portfolio-buttons">
-                <button type="button">All</button>
-                <button type="button">Web design</button>
+                <button type="button" onclick="showAll()" >All</button>
+                <button type="button" >Web design</button>
                 <button type="button">Graphic design</button>
                 <button type="button">Artwork</button>
             </div>
-            <div class="flex-between">
+            <div id="show" class="flex-between">
                 <img src="assets/img/Image1.png" alt="image">
                 <img src="assets/img/Image2.png" alt="image">
                 <img src="assets/img/Image3.png" alt="image">
@@ -232,6 +238,11 @@
             </div>
         </div>
     </footer>
+
+    <script src="script.js"></script>
+    <script type="text/javascript">
+
+    </script>
 
 </body>
 </html>
